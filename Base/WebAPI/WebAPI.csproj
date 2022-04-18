@@ -2,7 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>649c97db-e989-4f87-8478-bf582c9531cf</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="SpringConfig\**" />
+    <Content Remove="SpringConfig\**" />
+    <EmbeddedResource Remove="SpringConfig\**" />
+    <None Remove="SpringConfig\**" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
