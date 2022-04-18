@@ -11,7 +11,7 @@ using CMUtility;
 
 namespace WebAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class TestController : ControllerBase
     {
