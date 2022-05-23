@@ -11,7 +11,6 @@ using CMUtility;
 
 namespace WebAPI.Controllers
 {
-    [Route("[controller]")]
     [ApiController]
     public class TestController : ControllerBase
     {
@@ -31,11 +30,17 @@ namespace WebAPI.Controllers
         }
         #endregion
 
-
         [HttpPost]
-        public void TestAPI()
+        public string TestAPI(string str)
         {
-            _DoProcMethodService.TestFunction("123");
+            return str;
+            //_DoProcMethodService.TestFunction(str);
+        }
+
+        [HttpGet]
+        public string TestAPI2()
+        {
+            return "1234";
         }
     }
 }

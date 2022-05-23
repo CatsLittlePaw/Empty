@@ -15,9 +15,9 @@ namespace DataAccessLayer.Dao.Implement
         /// <history>
         /// 2022/03/17  Chris Liao  Create
         /// </history>
-        public int TestFunction()
+        public string TestFunction(string seqNo)
         {
-            return 1234;
+            return seqNo;
         }
     }
 }

@@ -14,6 +14,6 @@ namespace DataAccessLayer.Dao.Interface
         /// <history>
         /// 2022/03/17  Chris Liao  Create
         /// </history>
-        int TestFunction();
+        string TestFunction(string seqNo);
     }
 }
