@@ -43,8 +43,7 @@
   </object>
 
   <!--每一個Dao，所使用的Spring.Data.Core.AdoTemplate是哪一個DB provider-->
-  <object id="DoProcMethodDao" type="DataAccessLayer.Dao.Implement.DoProcMethod.DoProcMethodDao, DataAccessLayer">
-    <property name="AdoTemplate" ref="adoTemplate"/>
+  <object id="DoProcMethodDao" type="DataAccessLayer.Dao.Implement.DoProcMethod.DoProcMethodMsDao, DataAccessLayer">
   </object>
 
   <!--<object id="OutlineTreeDao" type="DataAccessLayer.Dao.Implement.OutlineTreeDao, DataAccessLayer">

@@ -19,10 +19,14 @@ namespace BusinessLogicLayer.Service.Implement
             {
                 if (_DoProcMethodDao == null)
                 {
-                    _DoProcMethodDao = (DoProcMethodDao)(new RepositoryFactory()).Service("DoProcMethodDao");
+                    _DoProcMethodDao = (IDoProcMethodDao)(new RepositoryFactory()).Service("DoProcMethodDao");
                 }
 
                 return _DoProcMethodDao;
+            }
+            set
+            {
+                _DoProcMethodDao = value;
             }
         }
     }
