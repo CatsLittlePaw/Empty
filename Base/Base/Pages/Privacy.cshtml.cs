@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Base.Pages
+namespace WebUI.Pages
 {
     public class PrivacyModel : PageModel
     {

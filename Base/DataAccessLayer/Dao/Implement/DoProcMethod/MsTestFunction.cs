@@ -8,9 +8,9 @@ namespace DataAccessLayer.Dao.Implement
 {
     public partial class DoProcMethodMsDao : IDoProcMethodDao
     {
-        public string TestFunction(string seqNo)
+        public string TestFunction()
         {
-            return "拉拉拉" + seqNo;
+            return "拉拉拉";
         }
     }
 }

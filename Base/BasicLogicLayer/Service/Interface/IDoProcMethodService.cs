@@ -15,6 +15,6 @@ namespace BusinessLogicLayer.Service.Interface
         /// <history>
         /// 2022/03/17  Chris Liao  Create
         /// </history>
-        void TestFunction(string stepSeqNo);
+        string TestFunction();
     }
 }

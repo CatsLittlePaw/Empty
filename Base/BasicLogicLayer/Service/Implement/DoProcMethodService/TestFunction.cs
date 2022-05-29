@@ -16,9 +16,9 @@ namespace BusinessLogicLayer.Service.Implement
         /// <history>
         /// 2022/03/17  Chris Liao  Create
         /// </history>
-        public void TestFunction(string stepSeqNo)
+        public string TestFunction()
         {
-            _DoProcMethodDao.TestFunction(stepSeqNo);
+            return _DoProcMethodDao.TestFunction();
         }
     }
 }

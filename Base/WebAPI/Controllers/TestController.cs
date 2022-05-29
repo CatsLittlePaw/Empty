@@ -11,7 +11,6 @@ using CMUtility;
 
 namespace WebAPI.Controllers
 {
-    [ApiController]
     public class TestController : ControllerBase
     {
         #region Properties
@@ -31,10 +30,9 @@ namespace WebAPI.Controllers
         #endregion
 
         [HttpPost]
-        public string TestAPI(string str)
+        public string TestAPI(dynamic obj)
         {
-            return str;
-            //_DoProcMethodService.TestFunction(str);
+            return obj.ss;// _DoProcMethodService.TestFunction();
         }
 
         [HttpGet]
