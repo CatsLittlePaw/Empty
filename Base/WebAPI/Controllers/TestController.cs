@@ -30,9 +30,9 @@ namespace WebAPI.Controllers
         #endregion
 
         [HttpPost]
-        public string TestAPI(dynamic obj)
+        public string TestAPI(dynamic str)
         {
-            return obj.ss;// _DoProcMethodService.TestFunction();
+            return "sdf";// _DoProcMethodService.TestFunction();
         }
 
         [HttpGet]

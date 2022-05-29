@@ -1,13 +1,15 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
 }
 
 <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 
-
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
     <input type="button" id="calltestapi" value="呼叫Post方法api" />
 
     <input type="button" id="calltestapi2" value="呼叫Get方法api2" />
@@ -19,9 +21,12 @@
 
         $.ajax({
             type: 'POST',
-            contentType: 'application/json',
-            url: 'http://localhost:2233/test/TestAPI',
-            data: JSON.stringify({ss: "input"}),
+            url: 'http://220.135.33.129:2233/test/TestAPI',
+            contentType: "application/json",
+            dataType: 'json',
+            data: JSON.stringify({str: "input"}),
+            crossDomain: true,
+            async: true,
             success: function (msg) {
 
                 alert("success");
@@ -39,8 +44,11 @@
 
         $.ajax({
             type: 'GET',
-            contentType: 'application/json',
-            url: 'http://localhost:2233/test/TestAPI2',
+            url: 'http://220.135.33.129:2233/test/TestAPI2',
+            contentType: "application/x-www-form-urlencoded",//"application/json; charset=utf-8",
+            dataType: 'json',
+            crossDomain: true,
+            async: true,
             success: function (msg) {
 
                 alert("success");

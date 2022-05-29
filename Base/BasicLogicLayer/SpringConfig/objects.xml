@@ -42,6 +42,6 @@
   <!--該Service用到哪一些Dao，要加進去Property裡面，該Property是ref到哪一個Dao object-->
   <object id="DoProcMethodService" type="BusinessLogicLayer.Service.Implement.DoProcMethodService, BusinessLogicLayer">
     <property name="DoProcMethodDao" ref="DoProcMethodDao"/>
-  </object> 
+  </object>
   <!--ServiceEnd (快速搜尋用，Service請加在上面)-->
 </objects>
