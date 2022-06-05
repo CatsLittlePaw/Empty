@@ -21,7 +21,7 @@
 
         $.ajax({
             type: 'POST',
-            url: 'http://220.135.33.129:2233/test/TestAPI',
+            url: 'http://localhost:2233/test/TestAPI',
             // contentType: "application/json", 此行會導致 …Response to preflight request doesn't pass access control check…
             //dataType: 'json', 此行若回傳值非json會導致SyntaxError: Unexpected token s in JSON at position 0
             data: JSON.stringify({str: "input"}),
@@ -43,7 +43,7 @@
 
         $.ajax({
             type: 'GET',
-            url: 'http://220.135.33.129:2233/test/TestAPI2',
+            url: 'http://localhost:2233/test/TestAPI2',
             async: true,
             success: function (data) {
 
