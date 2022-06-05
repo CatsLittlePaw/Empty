@@ -8,6 +8,8 @@ using BusinessLogicLayer.Service.Interface;
 using BusinessLogicLayer.Service.Implement;
 using Spring.Transaction;
 using CMUtility;
+using Microsoft.Extensions.Logging;
+
 
 namespace WebAPI.Controllers
 {
@@ -27,12 +29,22 @@ namespace WebAPI.Controllers
                 return _DoProcMethodService;
             }
         }
+
+        private readonly ILogger<TestController> _logger;
+
+        public TestController(ILogger<TestController> logger)
+        {
+            _logger = logger;
+        }
+
         #endregion
+
+
 
         [HttpPost]
         public string TestAPI(dynamic str)
         {
-            return "sdf";// _DoProcMethodService.TestFunction();
+            return  "sdf";// _DoProcMethodService.TestFunction();
         }
 
         [HttpGet]
